@@ -1,0 +1,59 @@
+'fileTypes': ['self']
+'name': 'Self'
+'foldingStartMarker': '\\(|\\['
+'foldingStopMarker': '\\)|\\]'
+'patterns': [
+  {
+    'match': '\\b(self|resend)\\b'
+    'name': 'keyword.language.self'
+  }
+  {
+    'match': '\\b(bootstrap|globals|traits|mixins)\\b'
+    'name': 'keyword.special-objects.self'
+  }
+  {
+    'match': '(\\!|\\@|\\#|\\$|\\%|\\^|\\&|\\*|\\-|\\+|\\=|\\~|\\/|\\?|\\<|\\>|\\,|\\;|\\||\\`|\\\\)+'
+    'name': 'keyword.operators.self'
+  }
+  {
+    'begin': '"'
+    'end': '"'
+    'name': 'comment.language.self'
+  },
+  {
+    'begin': '\''
+    'end': '\''
+    'name': 'string.self'
+    'patterns': [
+      {
+        'match': '\\\\.'
+        'name': 'string.escape.self'
+      }
+    ]
+  }
+  {
+    'match': '[a-z_][0-9A-Za-z_]*'
+    'name': 'identifier.self'
+  }
+  {
+    'match': '(ifTrue:|ifFalse:|True:|False)'
+    'name': 'keyword.control.self'
+  }
+  {
+    'match': '\\d+(\\.\\d+)?(e|E)(\\+|\\-)?\\d+'
+    'name': 'constant.numeric.float.self'
+  }
+  {
+    'match': '\\d+\\.\\d+'
+    'name': 'constant.numeric.fixed.self'
+  }
+  {
+    'match': '\\d+(r|R)([A-Za-z\\d])+'
+    'name': 'constant.numeric.non-decimal.integer.self'
+  }
+  {
+    'match': '\\d+'
+    'name': 'constant.numeric.decimal.integer.self'
+  }
+]
+'scopeName': 'source.self'

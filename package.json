@@ -1,0 +1,15 @@
+{
+  "name": "language-self",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Syntax support for the Self language.",
+  "repository": "https://github.com/rameshvarun/language-self",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "atom-grammar-test": "^0.6.3"
+  }
+}
